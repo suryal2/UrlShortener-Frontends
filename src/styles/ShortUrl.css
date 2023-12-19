@@ -1,0 +1,137 @@
+.detail{
+    display:flex;
+    height:400px;
+  
+    background-color: rgb(89, 76, 98);
+}
+
+#detail1{
+    margin-left: 400px;
+    margin-top: 90px;
+  
+}
+
+#detail3{
+    margin-top: 0px;
+    padding-right: 50px; 
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-style: solid;
+    border-radius: 15px;  
+    background-color: rgb(89, 76, 98);
+    color:rgb(249, 249, 250);
+}
+
+
+#detail2{
+    margin-top: 10px;
+    padding-right: 50px; 
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: rgb(89, 76, 98);
+    color: rgb(249, 249, 250);
+
+}
+
+#detail{
+    margin-top: 100px;
+    margin-left: 170px; 
+    color:aliceblue;
+    text-align: center;
+    
+    width:400px;
+    height:200px;
+    text-align: justify;
+}
+ 
+
+.formdetail{
+    margin-top: 100px;
+    background-color: rgb(181, 168, 190);
+    border-radius: 20px;
+    width: 900px;
+    height: 280px;
+    color: aliceblue;
+}
+
+#det{
+    background-color: rgb(89, 76, 98);
+    width: 200px;
+    margin-left: 350px;
+}
+
+.ul1{
+    display: flex;
+    list-style: none;
+    margin-left: 520px;
+   
+}
+
+.navUrl{
+    
+    margin-top: 15px;
+}
+   
+
+
+li{
+    margin-left: 10px;
+    margin-top: 15px;
+  
+   
+   
+}
+.li1:hover{
+    
+    color:rgb(236, 214, 185)
+   } 
+   .li1{
+    color: rgb(16, 6, 25);
+    margin-left: 20px;
+    text-decoration:none;
+    
+   }
+
+   
+   
+
+   #copy{
+    border:solid;
+   
+    margin-right: 300px;
+    padding: 10px;
+     
+   }
+
+   
+    #copbutton{
+        background-color: antiquewhite;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        left: 600px;
+        bottom:59px
+    }
+
+    
+#err{
+    color: red;
+}
+
+#msg{
+    color: rgb(34, 92, 34);
+}
+
+.base{
+    background-color: rgb(58, 23, 65);
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(123, 137, 150);
+    padding: 20px;
+}

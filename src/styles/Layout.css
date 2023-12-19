@@ -1,0 +1,30 @@
+ 
+#back{
+    background-color: rgb(240, 221, 243);
+    height:80px;
+}
+
+.link{
+    display: flex;
+ 
+}
+#mar{
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+     /* color: rgb(9, 129, 233); */
+}
+
+#logout{
+    background-color: rgb(240, 221, 243);
+    color: rgb(41, 4, 68);
+    border: none;
+     font-size: 20px;
+      
+
+    
+}
+
+.fa{
+    margin-left: 50px;
+}

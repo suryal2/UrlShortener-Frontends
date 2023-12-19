@@ -1,4 +1,4 @@
-.container{
+/* /* .container{
     max-width:400px;
     margin:50px auto;
     padding:20px;
@@ -22,4 +22,42 @@ label{
     background-color:blue;
     border:none;
     color:#fff;
+} */
+ 
+#cshom{
+     max-width:400px; 
+       
+    margin: 70px auto;
+    /* margin-right: 220px; */
+    padding-top:50px;
+    background-color:rgb(248, 251, 253);
+  
 }
+h1{
+text-align:center;
+}
+
+label{
+    font-weight:bold;
+     
+}
+
+ 
+
+.form-control{
+    margin-bottom:15px;
+}
+.btn-primary{
+    width:100%;
+    background-color:blue;
+    border:none;
+    color:#fff;
+    margin-top: 20px;
+    
+}
+ 
+
+
+p{
+    margin-top: 20px;
+} 

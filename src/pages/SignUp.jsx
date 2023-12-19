@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useRef, useState } from 'react';
 import { Container,Form,Button } from "react-bootstrap";
 import '../styles/SignUp.css';
 import { Link,useNavigate } from "react-router-dom";
@@ -14,6 +14,9 @@ const SignUp = () => {
 });
 
      
+const nameRef = useRef(null);
+const emailRef = useRef(null);
+const passwordRef = useRef(null);
 
       const handleChange = (e)=>{
 const {name, value} = e.target;
@@ -27,8 +30,14 @@ setFormData({...formData, [name]: value });
             console.log(response);
             if(response.data === true){
                 alert("Registeration link send to your email id");
+                nameRef.current.value="";
+                emailRef.current.value="";
+                passwordRef.current.value="";
             } else if (response.data === false){
                 alert("user already exists")
+                nameRef.current.value="";
+                emailRef.current.value="";
+                passwordRef.current.value="";
             };
 
 
@@ -44,8 +53,12 @@ setFormData({...formData, [name]: value });
 
 
   return (
-     <Container>
-        <h1>Registeration Form</h1>
+    <div className="sin">
+         <img id="sinImg" src="./img/sign.jpeg" alt="sign imag"></img>
+     <Container id="cslog">
+    
+  
+        <h3>  Welcome!</h3>
         <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Label>Name</Form.Label>
@@ -54,6 +67,7 @@ setFormData({...formData, [name]: value });
                 name="name" 
                 value={formData.name} 
                 onChange={handleChange} 
+                ref={nameRef} 
                 required /> 
             </Form.Group>
          
@@ -64,6 +78,7 @@ setFormData({...formData, [name]: value });
                  name="email" 
                  value={formData.email} 
                  onChange={handleChange} 
+                 ref={emailRef} 
                  required /> 
             </Form.Group>
          
@@ -74,13 +89,16 @@ setFormData({...formData, [name]: value });
                 name="password" 
                 value={formData.password} 
                 onChange={handleChange} 
+                ref={passwordRef} 
                 required /> 
             </Form.Group>
-            <Button variant="primary" type="submit">Register</Button>
-            <p>Already have an account?  <Link to="/login">Login</Link> </p>
+            <Button variant="primary" type="submit"> Sign Up</Button>
+            <p>Don't have an account? <Link to="/login">Login</Link> </p>
           
         </Form>
+      
      </Container>
+     </div>
   )
 }
 
